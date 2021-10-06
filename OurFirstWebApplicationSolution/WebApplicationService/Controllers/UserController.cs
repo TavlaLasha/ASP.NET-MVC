@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace WebApplicationService.Controllers
 {
     [Authorize]
-    public class ValuesController : ApiController
+    public class UserController : ApiController
     {
         // GET api/values
         public IEnumerable<string> Get()
