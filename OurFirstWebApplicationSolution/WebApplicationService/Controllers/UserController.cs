@@ -4,37 +4,103 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApplicationService.EF;
+using WebApplicationService.Models;
 
 namespace WebApplicationService.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class UserController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        // GET api/User
+        public IEnumerable<UserDTO> Get()
         {
-            return new string[] { "value1", "value2" };
+            using (LCContext db = new LCContext())
+            {
+                return db.Users.Select(i => new UserDTO
+                {
+                    FirstName = i.FirstName,
+                    LastName = i.LastName,
+                    Email = i.Email,
+                    IDNumber = i.IDNumber,
+                    Password = i.Password,
+                    PhoneNumber = i.PhoneNumber
+                }).ToList();
+            }
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        // GET api/User?IDNumber=5
+        public UserDTO Get(string IDNumber)
         {
-            return "value";
+            using (LCContext db = new LCContext())
+            {
+                return db.Users.Where(i => i.IDNumber.Equals(IDNumber)).Select(i => new UserDTO
+                {
+                    FirstName = i.FirstName,
+                    LastName = i.LastName,
+                    Email = i.Email,
+                    IDNumber = i.IDNumber,
+                    Password = i.Password,
+                    PhoneNumber = i.PhoneNumber
+                }).FirstOrDefault();
+            }
         }
 
-        // POST api/values
-        public void Post([FromBody]string value)
+        // POST api/User
+        public void Post([FromBody]UserDTO u)
         {
+            using (LCContext db = new LCContext())
+            {
+                if (db.Users.Any(i => i.IDNumber.Equals(u.IDNumber)))
+                    throw new Exception($"User with ID Number {u.IDNumber} already exists!");
+
+                User udt = new User
+                {
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    Email = u.Email,
+                    IDNumber = u.IDNumber,
+                    Password = u.Password,
+                    PhoneNumber = u.PhoneNumber
+                };
+                db.Users.Add(udt);
+                db.SaveChanges();
+            }
         }
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        // PUT api/User?IDNumber=5
+        public void Put(string IDNumber, [FromBody]UserDTO u)
         {
+            using (LCContext db = new LCContext())
+            {
+                if (!db.Users.Any(i => i.IDNumber.Equals(IDNumber)))
+                    throw new Exception($"User with ID Number {IDNumber} not found!");
+
+                var udt = db.Users.Where(i => i.IDNumber.Equals(IDNumber)).First();
+
+                udt.FirstName = u.FirstName;
+                udt.LastName = u.LastName;
+                udt.Email = u.Email;
+                udt.IDNumber = u.IDNumber;
+                udt.Password = u.Password;
+                udt.PhoneNumber = u.PhoneNumber;
+
+                db.SaveChanges();
+            }
         }
 
-        // DELETE api/values/5
-        public void Delete(int id)
+        // DELETE api/User/5
+        public void Delete(string IDNumber)
         {
+            using (LCContext db = new LCContext())
+            {
+                if (!db.Users.Any(i => i.IDNumber.Equals(IDNumber)))
+                    throw new Exception($"User with ID Number {IDNumber} not found!");
+
+                var udt = db.Users.Where(i => i.IDNumber.Equals(IDNumber)).First();
+                db.Users.Remove(udt);
+                db.SaveChanges();
+            }
         }
     }
 }
