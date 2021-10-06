@@ -12,3 +12,5 @@
 ვლადიმერი: Lecturer
 
 დანარჩენებმაც მითხარით რაზე აკეთებთ და ჩავამატებ
+
+არჩევანი: CourseLocation, Courses, CourseStream, Curriculum, Registrations, Subjects.
