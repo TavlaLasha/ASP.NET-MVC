@@ -11,6 +11,8 @@
 
 ვლადიმერი: Lecturer
 
+ბარბი: Subjects
+
 დანარჩენებმაც მითხარით რაზე აკეთებთ და ჩავამატებ
 
-არჩევანი: CourseLocation, Courses, CourseStream, Curriculum, Registrations, Subjects.
+არჩევანი: CourseLocation, Courses, CourseStream, Curriculum, Registrations.
