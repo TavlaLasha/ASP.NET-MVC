@@ -29,5 +29,7 @@ namespace OurFirstWebApplication.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<OurFirstWebApplication.Models.SubjectViewModel> SubjectViewModels { get; set; }
     }
 }

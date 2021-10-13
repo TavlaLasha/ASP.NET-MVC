@@ -91,5 +91,7 @@ namespace WebApplicationService.EF
                 .HasForeignKey(e => e.StudentID)
                 .WillCascadeOnDelete(false);
         }
+
+        public System.Data.Entity.DbSet<WebApplicationService.Models.SubjectViewModel> SubjectViewModels { get; set; }
     }
 }

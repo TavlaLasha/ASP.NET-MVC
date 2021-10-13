@@ -10,7 +10,8 @@ namespace OurFirstWebApplication
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
-        {
+        { 
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
@@ -18,6 +19,14 @@ namespace OurFirstWebApplication
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+               name: "Subject",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "Subject", action = "Index" }
+           );
         }
+
     }
+    
 }
