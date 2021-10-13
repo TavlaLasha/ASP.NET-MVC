@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -10,16 +11,39 @@ namespace WebApplicationService.Models
     public class UserViewModel
     {
         [JsonProperty(PropertyName = "FirstName")]
+        [Display(Name="სახელი")]
+        [DataType(DataType.Text)]
+        [Required(ErrorMessage ="სახელის მითითება სავალდებულოა"), MaxLength(50, ErrorMessage ="სახელი არ უნდა აღემატებოდეს 50 სიმბოლოს")]
         public string FirstName { get; set; }
+
         [JsonProperty(PropertyName = "LastName")]
+        [Display(Name = "გვარი")]
+        [DataType(DataType.Text)]
+        [Required(ErrorMessage = "გვარის მითითება სავალდებულოა"), MaxLength(50, ErrorMessage = "გვარი არ უნდა აღემატებოდეს 50 სიმბოლოს")]
         public string LastName { get; set; }
+
         [JsonProperty(PropertyName = "IDNumber")]
+        [Display(Name = "პირადი ნომერი")]
+        [DataType(DataType.Text)]
+        [Required(ErrorMessage = "სახელის მითითება სავალდებულოა"), MaxLength(11, ErrorMessage = "პირადი ნომერი არ უნდა აღემატებოდეს 11 სიმბოლოს")]
         public string IDNumber { get; set; }
+
         [JsonProperty(PropertyName = "PhoneNumber")]
+        [Display(Name = "ტელეფონი")]
+        [DataType(DataType.PhoneNumber)]
+        [StringLength(9)]
         public string PhoneNumber { get; set; }
+
         [JsonProperty(PropertyName = "Email")]
+        [Display(Name = "ელ-ფოსტა")]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "ელ-ფოსტის მითითება სავალდებულოა")]
         public string Email { get; set; }
+
         [JsonProperty(PropertyName = "Password")]
+        [Display(Name = "პაროლი")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "პაროლის მითითება სავალდებულოა"), MaxLength(50, ErrorMessage = "პაროლი არ უნდა აღემატებოდეს 50 სიმბოლოს")]
         public string Password { get; set; }
     }
 }

@@ -71,18 +71,31 @@ namespace OurFirstWebApplication.Controllers
         }
 
         // GET: User/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int IDNumber)
         {
-            return View();
+            string DetailsURL = "http://localhost:53338/api/User?IDNumber=";
+            HttpResponseMessage response = client.GetAsync(DetailsURL + IDNumber).Result;
+
+            UserViewModel ct = new UserViewModel();
+
+            if (response.IsSuccessStatusCode)
+            {
+                ct = JsonConvert.DeserializeObject<UserViewModel>(response.Content.ReadAsStringAsync().Result);
+            }
+            return View(ct);
         }
 
         // POST: User/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int IDNumber, [Bind(Include = "FirstName, LastName, PhoneNumber, Email, Password")] UserViewModel user)
         {
             try
             {
-                // TODO: Add update logic here
+                string output = JsonConvert.SerializeObject(user);
+                var stringContent = new StringContent(output, UnicodeEncoding.UTF8, "application/json");
+
+                string EditURL = "http://localhost:53338/api/User?IDNumber=";
+                HttpResponseMessage response = client.PutAsync(EditURL+IDNumber, stringContent).Result;
 
                 return RedirectToAction("Index");
             }
@@ -93,19 +106,28 @@ namespace OurFirstWebApplication.Controllers
         }
 
         // GET: User/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int IDNumber)
         {
-            return View();
+            string DetailsURL = "http://localhost:53338/api/User?IDNumber=";
+            HttpResponseMessage response = client.GetAsync(DetailsURL + IDNumber).Result;
+
+            UserViewModel ct = new UserViewModel();
+
+            if (response.IsSuccessStatusCode)
+            {
+                ct = JsonConvert.DeserializeObject<UserViewModel>(response.Content.ReadAsStringAsync().Result);
+            }
+            return View(ct);
         }
 
         // POST: User/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int IDNumber, FormCollection collection)
         {
             try
             {
-                // TODO: Add delete logic here
-
+                string DeleteURL = "http://localhost:53338/api/User?IDNumber=";
+                HttpResponseMessage response = client.DeleteAsync(DeleteURL+ IDNumber).Result;
                 return RedirectToAction("Index");
             }
             catch

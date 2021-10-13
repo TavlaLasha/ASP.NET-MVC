@@ -81,7 +81,6 @@ namespace WebApplicationService.Controllers
                 udt.FirstName = u.FirstName;
                 udt.LastName = u.LastName;
                 udt.Email = u.Email;
-                udt.IDNumber = u.IDNumber;
                 udt.Password = u.Password;
                 udt.PhoneNumber = u.PhoneNumber;
 
