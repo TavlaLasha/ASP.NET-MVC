@@ -13,6 +13,8 @@
 
 ბარბი: Subjects
 
+თეკლა: Courses
+
 დანარჩენებმაც მითხარით რაზე აკეთებთ და ჩავამატებ
 
-არჩევანი: CourseLocation, Courses, CourseStream, Curriculum, Registrations.
+არჩევანი: CourseLocation, CourseStream, Curriculum, Registrations.
