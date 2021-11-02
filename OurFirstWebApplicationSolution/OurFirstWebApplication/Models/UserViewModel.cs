@@ -25,7 +25,8 @@ namespace WebApplicationService.Models
         [JsonProperty(PropertyName = "IDNumber")]
         [Display(Name = "პირადი ნომერი")]
         [DataType(DataType.Text)]
-        [Required(ErrorMessage = "სახელის მითითება სავალდებულოა"), MaxLength(11, ErrorMessage = "პირადი ნომერი არ უნდა აღემატებოდეს 11 სიმბოლოს")]
+        [Required(ErrorMessage = "პირადი ნომრის მითითება სავალდებულოა"), MaxLength(11, ErrorMessage = "პირადი ნომერი არ უნდა აღემატებოდეს 11 სიმბოლოს")]
+        [RegularExpression(@"(\S\W)+", ErrorMessage = "Space and characters not allowed")]
         public string IDNumber { get; set; }
 
         [JsonProperty(PropertyName = "PhoneNumber")]
@@ -38,6 +39,7 @@ namespace WebApplicationService.Models
         [Display(Name = "ელ-ფოსტა")]
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "ელ-ფოსტის მითითება სავალდებულოა")]
+        [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", ErrorMessage = "შეყვანილი ელ-ფოსტია არავალიდურია")]
         public string Email { get; set; }
 
         [JsonProperty(PropertyName = "Password")]
