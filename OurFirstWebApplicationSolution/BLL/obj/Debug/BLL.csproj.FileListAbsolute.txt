@@ -1,4 +1,3 @@
-C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\bin\Debug\BLL.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\bin\Debug\BLL.pdb
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\bin\Debug\DAL.dll
@@ -9,5 +8,6 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\bin\Debug\EntityFramework.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\bin\Debug\Models.pdb
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\obj\Debug\BLL.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\BLL\obj\Debug\BLL.pdb

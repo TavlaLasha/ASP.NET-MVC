@@ -1,5 +1,4 @@
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Models\bin\Debug\Models.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Models\bin\Debug\Models.pdb
-C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Models\obj\Debug\Models.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Models\obj\Debug\Models.pdb

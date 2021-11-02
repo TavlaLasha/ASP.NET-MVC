@@ -15,6 +15,7 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Web
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\WebApplicationService.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\WebApplicationService.pdb
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Antlr3.Runtime.dll
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\BLL.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\EntityFramework.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\EntityFramework.SqlServer.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.AI.Agent.Intercept.dll
@@ -38,6 +39,7 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Web
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Models.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Newtonsoft.Json.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Owin.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\System.Net.Http.Formatting.dll
@@ -52,6 +54,9 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Web
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\System.Web.WebPages.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\System.Web.WebPages.Razor.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\WebGrease.dll
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\DAL.dll
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\BLL.pdb
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Models.pdb
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.AI.Web.xml
@@ -85,6 +90,7 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Web
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\System.Web.Http.Owin.xml
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\bin\DAL.pdb
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\obj\Debug\WebApplicationService.csprojResolveAssemblyReference.cache
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\obj\Debug\WebApplicationService.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\WebApplicationService\obj\Debug\WebApplicationService.pdb
