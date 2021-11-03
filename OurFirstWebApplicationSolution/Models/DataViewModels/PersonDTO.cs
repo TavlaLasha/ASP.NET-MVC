@@ -33,6 +33,7 @@ namespace Models.DataViewModels
         [Display(Name = "დაბადების თარიღი")]
         [DataType(DataType.Date)]
         [Required(ErrorMessage = "დაბადების თარიღის მითითება სავალდებულოა")]
+        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
         public DateTime BirthDate { get; set; }
 
         [Display(Name = "ფოტო")]

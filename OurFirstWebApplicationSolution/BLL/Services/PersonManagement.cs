@@ -40,8 +40,8 @@ namespace BLL.Services
 
         public bool DeletePerson(string pn)
         {
-            if (db.Persons.Any(i => i.PN.Equals(pn)))
-                throw new Exception($"Person with ID Number {pn} already exists!");
+            if (!db.Persons.Any(i => i.PN.Equals(pn)))
+                throw new Exception($"Person with ID Number {pn} not found!");
 
             var udt = db.Persons.Where(i => i.PN.Equals(pn)).First();
             db.Persons.Remove(udt);
@@ -51,8 +51,8 @@ namespace BLL.Services
 
         public bool EditPerson(string pn, PersonDTO person)
         {
-            if (db.Persons.Any(i => i.PN.Equals(pn)))
-                throw new Exception($"Person with ID Number {person.PN} already exists!");
+            if (!db.Persons.Any(i => i.PN.Equals(pn)))
+                throw new Exception($"Person with ID Number {person.PN} not found!");
 
             var udt = db.Persons.Where(i => i.PN.Equals(pn)).First();
 
@@ -60,7 +60,8 @@ namespace BLL.Services
             udt.LastName = person.LastName;
             udt.Email = person.Email;
             udt.BirthDate = person.BirthDate;
-            
+            udt.Photo = person.Photo;
+
             db.SaveChanges();
             return true;
         }
@@ -84,7 +85,8 @@ namespace BLL.Services
                 LastName = i.LastName,
                 Email = i.Email,
                 PN = i.PN,
-                BirthDate = i.BirthDate
+                BirthDate = i.BirthDate,
+                Photo = i.Photo
             }).FirstOrDefault();
         }
     }

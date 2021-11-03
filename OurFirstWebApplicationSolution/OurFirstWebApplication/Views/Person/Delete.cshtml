@@ -1,15 +1,16 @@
 ﻿@model Models.DataViewModels.PersonDTO
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Delete";
 }
 
-<h2>Details</h2>
+<h2>Delete</h2>
 
-<div class="clearfix">
+<h3>Are you sure you want to delete this?</h3>
+<div>
     <h4>PersonDTO</h4>
     <hr />
-    <dl class="dl-horizontal" style="float:left">
+    <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -51,11 +52,17 @@
         </dd>
 
     </dl>
-    <div class="img-thumbnail" style="margin-left:30px">
+
+    <div class="img-thumbnail" style="margin-left:30px; margin-bottom:30px">
         <img src="@String.Format("data:image/png;base64,{0}", Convert.ToBase64String(Model.Photo))" style="width:170px" alt="NO IMAGE">
     </div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.PN }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
