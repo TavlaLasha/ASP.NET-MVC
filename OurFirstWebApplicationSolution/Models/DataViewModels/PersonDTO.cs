@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Models.DataViewModels
 {
@@ -31,11 +32,11 @@ namespace Models.DataViewModels
 
         [Display(Name = "დაბადების თარიღი")]
         [DataType(DataType.Date)]
-        [Required(ErrorMessage = "ელ-ფოსტის მითითება სავალდებულოა")]
+        [Required(ErrorMessage = "დაბადების თარიღის მითითება სავალდებულოა")]
         public DateTime BirthDate { get; set; }
 
         [Display(Name = "ფოტო")]
-        [DataType(DataType.Text)]
+        [DataType(DataType.Upload)]
         public byte[] Photo { get; set; }
     }
 }

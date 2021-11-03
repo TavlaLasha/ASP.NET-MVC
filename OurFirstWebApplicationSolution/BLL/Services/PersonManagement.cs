@@ -14,21 +14,28 @@ namespace BLL.Services
         PersonDBContext db = new PersonDBContext();
         public bool AddPerson(PersonDTO person)
         {
-            if (db.Persons.Any(i => i.PN.Equals(person.PN)))
-                throw new Exception($"Person with ID Number {person.PN} already exists!");
-
-            Person udt = new Person
+            try
             {
-                FirstName = person.FirstName,
-                LastName = person.LastName,
-                Email = person.Email,
-                PN = person.PN,
-                BirthDate = person.BirthDate,
-                Photo = person.Photo
-            };
-            db.Persons.Add(udt);
-            db.SaveChanges();
-            return true;
+                if (db.Persons.Any(i => i.PN.Equals(person.PN)))
+                    throw new Exception($"Person with ID Number {person.PN} already exists!");
+
+                Person udt = new Person
+                {
+                    FirstName = person.FirstName,
+                    LastName = person.LastName,
+                    Email = person.Email,
+                    PN = person.PN,
+                    BirthDate = person.BirthDate,
+                    Photo = person.Photo
+                };
+                db.Persons.Add(udt);
+                db.SaveChanges();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
         }
 
         public bool DeletePerson(string pn)
@@ -53,7 +60,6 @@ namespace BLL.Services
             udt.LastName = person.LastName;
             udt.Email = person.Email;
             udt.BirthDate = person.BirthDate;
-            udt.Photo = person.Photo;
             
             db.SaveChanges();
             return true;
@@ -66,9 +72,7 @@ namespace BLL.Services
                 FirstName = i.FirstName,
                 LastName = i.LastName,
                 Email = i.Email,
-                PN = i.PN,
-                BirthDate = i.BirthDate,
-                Photo = i.Photo
+                PN = i.PN
             });
         }
 
@@ -80,8 +84,7 @@ namespace BLL.Services
                 LastName = i.LastName,
                 Email = i.Email,
                 PN = i.PN,
-                BirthDate = i.BirthDate,
-                Photo = i.Photo
+                BirthDate = i.BirthDate
             }).FirstOrDefault();
         }
     }

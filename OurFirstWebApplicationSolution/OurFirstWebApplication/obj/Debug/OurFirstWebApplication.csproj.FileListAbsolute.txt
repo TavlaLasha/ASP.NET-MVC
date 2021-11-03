@@ -38,6 +38,7 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Our
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Models.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Newtonsoft.Json.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Owin.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\System.Web.Helpers.dll
@@ -48,6 +49,7 @@ C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\Our
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\System.Web.WebPages.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\System.Web.WebPages.Razor.dll
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\WebGrease.dll
+C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Models.pdb
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\lasha\Desktop\C#\ASP.NET\ASP.NET-MVC\OurFirstWebApplicationSolution\OurFirstWebApplication\bin\Microsoft.AI.Web.xml

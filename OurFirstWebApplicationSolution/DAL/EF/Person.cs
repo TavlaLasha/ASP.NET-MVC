@@ -9,7 +9,6 @@ namespace DAL.EF
     [Table("Persons")]
     public partial class Person
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         [Required]
